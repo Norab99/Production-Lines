@@ -8,7 +8,7 @@ long distance1;
 long duration2; 
 long distance2;
 
-long length;     // The lenght of the box in the production lines.
+long length;      // The lenght of the box in the production lines.
 long distance12; // The distance from sensor1 + the distance from sensor2.
 
 // The trigger and echo pins that attached to sensor1.
@@ -66,10 +66,11 @@ void loop() {
   if (length >=120 & length <=128){         // The range of the length of the box if it was 30cm.
     Motor1.write(90);                      // The box will go forward.
   }
-   else if (length >=101 & length <=109){  // The range of the length of the box if it was 20cm.
+  else if (length >=101 & length <=109){  // The range of the length of the box if it was 20cm.
     Motor1.write(180);                    // The box will go to the rigth.
   }
-   else if (length >=83 & length <=91){   // The range of the length of the box if it was 10cm.
+  else if (length >=83 & length <=91){   // The range of the length of the box if it was 10cm.
     Motor1.write(0);                     // The box will go to the left.
   }
+  
 }
