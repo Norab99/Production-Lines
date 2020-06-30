@@ -58,7 +58,7 @@ void loop() {
   duration2 = pulseIn(echoPin2, HIGH);
   distance2= duration2*0.034/2;
   
-  /* Detmine the length of the box by subtracting the addtion of the two
+  /* Determine the length of the box by subtracting the addtion of the two
   distance from the distance between the two sensors which is equal to 336 cm in this circiut.*/
   distance12 = distance1 + distance2;  
   length = 336 - distance12;     
