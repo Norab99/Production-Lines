@@ -63,13 +63,13 @@ void loop() {
   distance12 = distance1 + distance2;  
   length = 336 - distance12;     
   
-  if (length >=120 & length <=128){         // The range of the length of the box if it was 30cm.
+  if (length >=120 & length <=125){         // The range of the length of the box if it was 30cm.
     Motor1.write(90);                      // The box will go forward.
   }
-  else if (length >=101 & length <=109){  // The range of the length of the box if it was 20cm.
+  else if (length >=103 & length <=108){  // The range of the length of the box if it was 20cm.
     Motor1.write(180);                    // The box will go to the rigth.
   }
-  else if (length >=83 & length <=91){   // The range of the length of the box if it was 10cm.
+  else if (length >=86 & length <=91){   // The range of the length of the box if it was 10cm.
     Motor1.write(0);                     // The box will go to the left.
   }
   
